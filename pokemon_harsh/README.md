@@ -109,7 +109,7 @@ Primary styles are in `src/index.css`:
 5. No request cancellation on unmount.
    - Can trigger state updates after component unmount in edge cases.
 6. No pagination or "load more" support.
-   - App is limited to first 20 Pokemon only.
+   - App is limited to first 50 Pokemon only.
 
 ## Suggested Improvements
 - Add safe image fallback:
