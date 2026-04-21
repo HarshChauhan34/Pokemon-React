@@ -3,7 +3,7 @@
 ## Overview
 This project is a React + Vite application that fetches Pokemon data from [PokeAPI](https://pokeapi.co/) and renders a searchable card grid.
 
-The app currently loads **20 Pokemon** (`limit=20`) and displays key stats such as:
+The app currently loads **50 Pokemon** (`limit=50`) and displays key stats such as:
 - Name
 - Type(s)
 - Height
@@ -60,7 +60,7 @@ pokemon_harsh/
   - `error`
   - `search`
 - Fetch flow:
-  - Calls `https://pokeapi.co/api/v2/pokemon?limit=20`
+  - Calls `https://pokeapi.co/api/v2/pokemon?limit=50`
   - Extracts `results[]`
   - Fetches each Pokemon detail URL in parallel using `Promise.all`
   - Stores detailed results in state
@@ -109,7 +109,7 @@ Primary styles are in `src/index.css`:
 5. No request cancellation on unmount.
    - Can trigger state updates after component unmount in edge cases.
 6. No pagination or "load more" support.
-   - App is limited to first 20 Pokemon only.
+   - App is limited to first 50 Pokemon only.
 
 ## Suggested Improvements
 - Add safe image fallback:
